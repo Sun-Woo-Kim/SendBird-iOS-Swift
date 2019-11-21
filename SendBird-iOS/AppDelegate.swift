@@ -13,6 +13,9 @@ import AVKit
 import AVFoundation
 import Alamofire
 import AlamofireImage
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, SBDChannelDelegate {
@@ -22,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var pushReceivedGroupChannel: String?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        MSAppCenter.start("6c9586ed-f75c-42a1-bb65-b0b64b98f70c", withServices:[
+          MSAnalytics.self,
+          MSCrashes.self
+        ])
         
         SBDMain.initWithApplicationId("9880C4C1-E6C8-46E8-A8F1-D5890D598C08")
         SBDMain.add(self as SBDChannelDelegate, identifier: self.description)

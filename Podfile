@@ -11,4 +11,5 @@ target 'SendBird-iOS' do
   pod 'RSKImageCropper'
   pod 'NYTPhotoViewer', '~> 1.1.0'
   pod 'FLAnimatedImage', '~> 1.0'
+  pod 'AppCenter'
 end

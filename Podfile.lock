@@ -2,6 +2,14 @@ PODS:
   - Alamofire (4.8.1)
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
+  - AppCenter (2.5.1):
+    - AppCenter/Analytics (= 2.5.1)
+    - AppCenter/Crashes (= 2.5.1)
+  - AppCenter/Analytics (2.5.1):
+    - AppCenter/Core
+  - AppCenter/Core (2.5.1)
+  - AppCenter/Crashes (2.5.1):
+    - AppCenter/Core
   - FLAnimatedImage (1.0.12)
   - NYTPhotoViewer (1.1.0):
     - NYTPhotoViewer/AnimatedGifSupport (= 1.1.0)
@@ -15,15 +23,17 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage (~> 3.4)
+  - AppCenter
   - FLAnimatedImage (~> 1.0)
   - NYTPhotoViewer (~> 1.1.0)
   - RSKImageCropper
   - SendBirdSDK
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - AlamofireImage
+    - AppCenter
     - FLAnimatedImage
     - NYTPhotoViewer
     - RSKImageCropper
@@ -32,11 +42,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  AppCenter: fddcbac6e4baae3d93a196ceb0bfe0e4ce407dec
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   SendBirdSDK: d3b713679ded667524b5bac3620dd8d7745e9e17
 
-PODFILE CHECKSUM: 968cf1efa59c384aedbdbb77f5d0bcd79ed9842d
+PODFILE CHECKSUM: 745f972ff65dcd0e49d6a156360548ec6966171b
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
